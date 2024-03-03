@@ -6,20 +6,21 @@ Este é um simples programa em C++ para converter temperaturas de Celsius para F
 
 1. **Compilação:**
    - Certifique-se de ter um compilador C++ instalado em seu sistema.
-   - Abra o terminal na pasta do projeto e digite o seguinte comando para compilar o programa:
+     ```bash
+     git clone https://github.com/smokingsnakes83/Temperature-Converter.git temperature_converter
+     cd temperature_converter
+     g++ main.cpp -o temperature_converter
      ```
-     g++ main.cpp -o conversor_temperatura
-     ```
-   - Isso criará um executável chamado `conversor_temperatura`.
+   - Isso criará um executável chamado `temperature_converter`.
 
 2. **Execução:**
    - Após a compilação, execute o programa digitando o seguinte comando:
      ```
-     ./conversor_temperatura
+     ./temperature_converter
      ```
 
 3. **Entrada:**
-   - O programa solicitará que você insira a temperatura, digite C para converter de Celsius pra Fahrenheit ou F para converter de Fahrenheit para Celsius .
+   - O programa solicitará que você escolha para qual escala você deseja converter, digite C para converter de Celsius para Fahrenheit e F para converter de Fahrenheit para Celsius.
 
 4. **Saída:**
    - Após inserir a temperatura, o programa calculará e exibirá a temperatura equivalente à opção escolhida como entrada.
