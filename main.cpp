@@ -38,6 +38,8 @@ int main()
   float num;
   char opt = 'y';
 
+  std::cout << '\n' << "Bem Vindo ao Temperature Converter" << '\n';
+  std::cout << '\n';
   while (opt == 'y')
   {
     std::cout << "c -> [Celsius to Fahrenheit]\nf -> [Fahrenheit to Celsius] " << '\n';
@@ -45,26 +47,24 @@ int main()
 
     std::cout << '\n';
 
-    switch (opt)
+    if (opt == 'C' || opt == 'c')
     {
-    case 'c':
       std::cout << celsiusToFahrenheit(num) << "F" << '\n';
-      break;
-
-    case 'f':
-      std::cout << fahrenheitToCelsius(num) << "C" << '\n';
-      break;
-
-    default:
-      std::cout << "Opção inválida" << '\n';
-      break;
     }
+    
+    else if(opt == 'F' || opt == 'f')
+    
+      std::cout << fahrenheitToCelsius(num) << "C" << '\n'; 
 
+    else{
+      std::cout << "Opção inválida" << '\n';
+    }
+   
     std::cout << '\n';
     std::cout << "continuar? y/n? " << '\n';
     std::cin >> opt;
     std::cout << '\n';
   }
-
+  
   return 0;
 }
